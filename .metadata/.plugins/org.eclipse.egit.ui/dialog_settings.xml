@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/Kshyuk99/_JSP.academy.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Kshyuk99 &lt;Kshyuk99@naver.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Kshyuk99 &lt;Kshyuk99@naver.com&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\kshyu\git\_JSP.academy\.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="59"/>
+		<item key="DIALOG_Y_ORIGIN" value="127"/>
+		<item key="DIALOG_WIDTH" value="613"/>
+		<item key="DIALOG_HEIGHT" value="453"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.MergeTargetSelectionDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="98"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="535"/>
+		<item key="DIALOG_HEIGHT" value="669"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.merge.MergeResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="181"/>
+		<item key="DIALOG_Y_ORIGIN" value="301"/>
+		<item key="DIALOG_WIDTH" value="369"/>
+		<item key="DIALOG_HEIGHT" value="192"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="34"/>
+		<item key="DIALOG_Y_ORIGIN" value="128"/>
+		<item key="DIALOG_WIDTH" value="663"/>
+		<item key="DIALOG_HEIGHT" value="452"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+</section>
