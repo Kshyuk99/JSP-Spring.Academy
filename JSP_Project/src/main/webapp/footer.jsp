@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>2025 footer</title>
 </head>
 <body>
-<h1>HI!</h1>
+<table>
+<tr height="10%">
+
+</tr>
+<footer colspan="2" align="center">SHOP</footer>
+</table>
 </body>
 </html>

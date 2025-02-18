@@ -11,10 +11,10 @@
 <%
 String URL = "jdbc:mysql://localhost:3306/spring5fs";
 Class.forName("com.mysql.cj.jdbc.Driver");
-System.out.println("드라이버 로딩");
+out.println("드라이버 로딩<br>");
 try(Connection conn = DriverManager.getConnection(URL, "root", "1234"))
 {
-System.out.println("Mysql 접속성공");
+out.println("Mysql 접속성공");
 } catch(Exception e){e.printStackTrace();}
 %>
 </body>
