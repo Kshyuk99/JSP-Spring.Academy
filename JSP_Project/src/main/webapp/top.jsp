@@ -17,7 +17,7 @@
 				<th width="20%"><a href="best.jsp">베스트<a></th>				
 				<th width="20%">배송</th>
 				<th width="20%">상품목록</th>
-				<th width="20%">쿠폰/기획전</th>
+				<th width="20%">장바구니</th>
 			</tr>
 			<tr height="40%">
 				<td colspan="5">
