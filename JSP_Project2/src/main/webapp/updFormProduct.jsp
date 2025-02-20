@@ -32,7 +32,7 @@ try (Connection conn = DriverManager.getConnection(URL, "root", "1234");
 ID: <input type="text" name="id" value="<%= id %>" readonly /><br/>
 상품명: <input type="text" name="name" value="<%= name %>" /><br/>
 가격: <input type="text" name="price" value="<%= price %>" /><br/>
-설명: <input type="text" name="description" value="<%= description %>" /><br/>
+수량: <input type="text" name="description" value="<%= description %>" /><br/> <!-- 설명을 수량으로 변경 -->
 <input type="submit" value="상품 수정"/>
 </form>
 </body>

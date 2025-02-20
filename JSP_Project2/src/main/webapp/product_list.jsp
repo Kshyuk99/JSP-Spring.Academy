@@ -19,9 +19,9 @@ String sql = "SELECT * FROM products";  // 상품 목록을 가져오는 SQL 쿼
         <tr>
             <th>상품명</th>
             <th>가격</th>
-            <th>설명</th>
-            <th>수정</th>
-            <th>삭제</th>
+            <th>수량</th> <!-- 설명을 수량으로 변경 -->
+            <!-- <th>수정</th>
+            <th>삭제</th> -->
         </tr>
     </thead>
     <tbody>
@@ -35,8 +35,8 @@ String sql = "SELECT * FROM products";  // 상품 목록을 가져오는 SQL 쿼
             <td><%= rs.getString("name") %></td>
             <td><%= rs.getDouble("price") %></td>
             <td><%= rs.getString("description") %></td>
-            <td><a href="updFormProduct.jsp?id=<%= rs.getInt("id") %>">수정</a></td> <!-- 수정 링크 -->
-            <td><a href="deleteProduct.jsp?id=<%= rs.getInt("id") %>">삭제</a></td> <!-- 삭제 링크 -->
+            <%-- <td><a href="updFormProduct.jsp?id=<%= rs.getInt("id") %>">수정</a></td> <!-- 수정 링크 -->
+            <td><a href="deleteProduct.jsp?id=<%= rs.getInt("id") %>">삭제</a></td> <!-- 삭제 링크 --> --%>
         </tr>
         <%
             }
