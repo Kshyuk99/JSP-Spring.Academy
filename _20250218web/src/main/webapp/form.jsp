@@ -19,3 +19,5 @@ String sql = "insert into dept(no, name, loc) values(?,?,?)";
 </form>
 </body>
 </html>
+
+	
