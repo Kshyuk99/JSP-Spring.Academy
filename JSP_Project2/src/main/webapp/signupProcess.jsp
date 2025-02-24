@@ -4,10 +4,11 @@
 String name = request.getParameter("name");
 String email = request.getParameter("email");
 String password = request.getParameter("password");
+String address = request.getParameter("address"); 
 
 if (name != null && email != null && password != null) {
     String URL = "jdbc:mysql://localhost:3306/spring5fs";
-    String sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
+    String sql = "INSERT INTO users (name, email, password, address) VALUES (?, ?, ?, ?)";
 
     try (Connection conn = DriverManager.getConnection(URL, "root", "1234");
          PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -15,6 +16,7 @@ if (name != null && email != null && password != null) {
         stmt.setString(1, name);
         stmt.setString(2, email);
         stmt.setString(3, password);
+        stmt.setString(4, address);
         
         stmt.executeUpdate();
         

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.*, java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +10,6 @@
 <h3>장바구니</h3>
 
 <%
-    // 이미 선언된 session 객체를 사용하는 부분 (한 번만 선언)
-  //  HttpSession session = request.getSession();
     List<Map<String, Object>> cart = (List<Map<String, Object>>) session.getAttribute("cart");
 
     if (cart == null || cart.isEmpty()) {
@@ -57,5 +55,6 @@
 <%
     }
 %>
+    <a href="product_list.jsp">상품 목록으로</a>
 </body>
 </html>

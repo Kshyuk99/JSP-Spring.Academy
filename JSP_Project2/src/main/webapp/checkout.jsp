@@ -1,17 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.*, java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>주문 확인</title>
+<title>주문 정보 입력</title>
 </head>
 <body>
-<h3>주문 확인</h3>
+<h3>주문 정보 입력</h3>
 
 <%
-    // 세션에서 장바구니 정보 가져오기
-   // HttpSession session = request.getSession();
     List<Map<String, Object>> cart = (List<Map<String, Object>>) session.getAttribute("cart");
 
     if (cart == null || cart.isEmpty()) {
@@ -33,7 +31,7 @@
                 double total = 0;
                 for (Map<String, Object> item : cart) {
                     String name = (String) item.get("name");
-                    double price = (double) item.get("price");
+                    double price = (double)item.get("price");
                     int quantity = (int) item.get("quantity");
                     double subtotal = price * quantity;
                     total += subtotal;

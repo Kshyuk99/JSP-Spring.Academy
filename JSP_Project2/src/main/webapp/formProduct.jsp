@@ -9,7 +9,7 @@
 <form action="inputProduct.jsp" method="post">
 상품명: <input type="text" name="name" /><br/>
 가격: <input type="text" name="price" /><br/>
-설명: <input type="text" name="description" /><br/>
+수량: <input type="text" name="description" /><br/>
 <input type="submit" value="상품 추가"/>
 </form>
 </body>

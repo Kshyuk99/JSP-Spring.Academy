@@ -11,7 +11,9 @@
     이름: <input type="text" name="name" required><br/>
     이메일: <input type="email" name="email" required><br/>
     비밀번호: <input type="password" name="password" required><br/>
+    주소: <input type="address" name="address" required><br/>
     <input type="submit" value="회원가입">
 </form>
 </body>
 </html>
+<%@ include file="footer.jsp"%>	

@@ -1,10 +1,5 @@
-<%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%
-Class.forName("com.mysql.cj.jdbc.Driver");
-String URL = "jdbc:mysql://localhost:3306/spring5fs";  // 데이터베이스 주소
-String sql = "SELECT * FROM products";  // 상품 목록을 가져오는 SQL 쿼리
-%>
+<%@ page import="java.util.*, java.sql.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,39 +7,56 @@ String sql = "SELECT * FROM products";  // 상품 목록을 가져오는 SQL 쿼
 <title>상품 목록</title>
 </head>
 <body>
-<h2>상품 목록</h2>
-<!-- <a href="formProduct.jsp">상품 추가</a> -->  <!-- 상품 추가 페이지로 이동하는 링크 -->
-<table border="1">
-    <thead>
+    <h3>상품 목록</h3>
+
+    <%
+    // 데이터베이스에서 상품 목록 가져오기
+    String URL = "jdbc:mysql://localhost:3306/spring5fs";
+    String sql = "SELECT id, name, price FROM products"; // products 테이블에서 상품 정보 가져옴
+
+    List<Map<String, Object>> productList = new ArrayList<>();
+    try (Connection conn = DriverManager.getConnection(URL, "root", "1234");
+         PreparedStatement pstmt = conn.prepareStatement(sql);
+         ResultSet rs = pstmt.executeQuery()) {
+
+        while (rs.next()) {
+            Map<String, Object> product = new HashMap<>();
+            product.put("id", rs.getInt("id")); // id는 Integer 타입
+            product.put("name", rs.getString("name"));
+            product.put("price", rs.getDouble("price")); // price는 Double 타입
+            productList.add(product);
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+       
+    }
+    %>
+
+    <table border="1">
         <tr>
+            <th>ID</th>
             <th>상품명</th>
             <th>가격</th>
-            <th>수량</th> <!-- 설명을 수량으로 변경 -->
-            <!-- <th>수정</th>
-            <th>삭제</th> -->
+            <th>장바구니에 담기</th>
         </tr>
-    </thead>
-    <tbody>
-        <%
-        try (Connection conn = DriverManager.getConnection(URL, "root", "1234");
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql);) {
-            while(rs.next()) {
-        %>
+        <% for (Map<String, Object> product : productList) { %>
         <tr>
-            <td><%= rs.getString("name") %></td>
-            <td><%= rs.getDouble("price") %></td>
-            <td><%= rs.getString("description") %></td>
-            <%-- <td><a href="updFormProduct.jsp?id=<%= rs.getInt("id") %>">수정</a></td> <!-- 수정 링크 -->
-            <td><a href="deleteProduct.jsp?id=<%= rs.getInt("id") %>">삭제</a></td> <!-- 삭제 링크 --> --%>
+            <td><%= product.get("id") %></td>
+            <td><%= product.get("name") %></td>
+            <td><%= product.get("price") %></td>
+            <td>
+                <form action="addToCart.jsp" method="post">
+                    <input type="hidden" name="productId" value="<%= product.get("id") %>">
+                    <input type="hidden" name="productName" value="<%= product.get("name") %>">
+                    <input type="hidden" name="productPrice" value="<%= product.get("price") %>">
+                    <label for="quantity<%= product.get("id") %>">수량:</label>
+                    <input type="number" name="productQuantity" id="quantity<%= product.get("id") %>" value="1" min="1" required>
+                    <input type="submit" value="추가">
+                </form>
+            </td>
         </tr>
-        <%
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        %>
-    </tbody>
-</table>
+        <% } %>
+    </table>
+    <a href = "cart.jsp">장바구니로 가기</a>
 </body>
 </html>
