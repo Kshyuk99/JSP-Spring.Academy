@@ -5,5 +5,5 @@
     session.removeAttribute("userId"  );
     session.removeAttribute("userName");
 
-    response.sendRedirect("login_main.jsp"); // 로그인 메인 화면으로
+    response.sendRedirect("../index.jsp"); // 로그인 메인 화면으로
 %> 

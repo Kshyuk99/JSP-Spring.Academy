@@ -8,5 +8,6 @@
 </head>
 <body>
 <h1>contact page</h1>
+.전화&nbsp;&nbsp; &nbsp; &nbsp; 번호<br>
 </body>
 </html>

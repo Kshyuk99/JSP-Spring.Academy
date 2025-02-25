@@ -23,7 +23,7 @@ while(rs.next()){
      int price = rs.getInt("price");
      int quantity = rs.getInt("description");
     // String imageUrl = rs.getString("image_url");
-    String imageurl= "https://picsum.photos/250/250" ;
+   // String imageurl= "https://picsum.photos/250/250" ;
 	}	
 }catch(Exception e) { e.printStackTrace(); }
 %> 
@@ -35,24 +35,42 @@ while(rs.next()){
 	<caption>상품목록</caption>
 	<tr>
 		<td style="width: 150px; background-color: gray;">상품명</td>
-		<td><input type="text" name="sangpum" class="form-control" style="width: 200px;" required="required"> </td>
+		<td><input type="text" name="sangpum" value= "갤럭시북5" class="form-control" style="width: 200px;" required="required"> </td>
+		
 	</tr>		
 	<tr>
 		<td style="width: 150px; background-color: gray;">이미지</td>
-		<td><input type="image" img src="https://picsum.photos/250/250" class="form-control" style="width: 300px;" required="required"> </td>
+		<td><input type="image" img src="https://shopping-phinf.pstatic.net/main_5225015/52250151618.20250110133314.jpg?type=f640" class="form-control" style="width: 150px;" required="required"> </td>
 		
 	</tr>
 	<tr>
 		<td style="width: 150px; background-color: gray;">가격</td>
-		<td><input type="text" name="price" class="form-control" style="width: 200px;" required="required"> </td>
+		<td><input type="text" name="price" value="1899000" class="form-control" style="width: 200px;" required="required"> </td>
 	</tr>	
 	<tr>
 		<td style="width: 150px; background-color: gray;">수량</td>
-		<td><input type="text" name="amount" class="form-control" style="width: 200px;" required="required"> </td>
-		</tr>	
+		<td><input type="text" name="amount" value="20" class="form-control" style="width: 200px;" required="required"> </td>
+	</tr>
+	<tr>
+		<td style="width: 150px; background-color: gray;">상품명</td>
+		<td><input type="text" name="sangpum" value= "갤럭시S25" class="form-control" style="width: 200px;" required="required"> </td>
+	</tr>
+	<tr>
+		<td style="width: 150px; background-color: gray;">이미지</td>
+		<td><input type="image" img src="https://shopping-phinf.pstatic.net/main_5262874/52628743821.20250220111014.jpg?type=f640" class="form-control" style="width: 150px;" required="required"> </td>
+	</tr>
+	<tr>
+		<td style="width: 150px; background-color: gray;">가격</td>
+		<td><input type="text" name="price" value="1086000" class="form-control" style="width: 200px;" required="required"> </td>
+	</tr>	
+	<tr>
+		<td style="width: 150px; background-color: gray;">수량</td>
+		<td><input type="text" name="amount" value="20" class="form-control" style="width: 200px;" required="required"> </td>
+	</tr>
+				
 		<td align="center">
-			<input type="submit" value="등록">
-			<input type="submit" value="취소" onclick="window.location='index.jsp'">
+			<!-- <input type="submit" value="등록">
+			<input type="submit" value="취소" onclick="window.location='index.jsp'"> -->
 		</td>
 </table>
 </div>

@@ -59,3 +59,4 @@
     <a href="index.jsp">쇼핑몰 홈</a>
 </body>
 </html>
+<%@ include file="footer.jsp"%>

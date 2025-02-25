@@ -12,7 +12,7 @@
     <%
     // 데이터베이스에서 상품 목록 가져오기
     String URL = "jdbc:mysql://localhost:3306/spring5fs";
-    String sql = "SELECT id, name, price FROM products"; // products 테이블에서 상품 정보 가져옴
+    String sql = "SELECT id, name, price, image FROM products"; // products 테이블에서 상품 정보 가져옴
 
     List<Map<String, Object>> productList = new ArrayList<>();
     try (Connection conn = DriverManager.getConnection(URL, "root", "1234");
@@ -60,3 +60,4 @@
     <a href = "cart.jsp">장바구니로 가기</a>
 </body>
 </html>
+<%@ include file="footer.jsp"%>
