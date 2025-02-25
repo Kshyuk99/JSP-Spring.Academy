@@ -24,6 +24,7 @@ try (Connection conn = DriverManager.getConnection(URL, "root", "1234");
 <td><%= rs.getString("name") %></td>
 <td><%= rs.getDouble("price") %></td>
 <td><%= rs.getString("description") %></td>
+<td><%= rs.getString("image") %></td>
 <td>
     <!-- 상품을 장바구니에 담는 링크 -->
     <a href="addToCart.jsp?id=<%= rs.getInt("id") %>&quantity=1">장바구니에 담기</a>

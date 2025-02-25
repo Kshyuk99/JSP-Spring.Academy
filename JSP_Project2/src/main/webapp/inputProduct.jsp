@@ -3,7 +3,7 @@
 
 <%
     String URL = "jdbc:mysql://localhost:3306/spring5fs";
-    String sql = "INSERT INTO products (name, price, description) VALUES (?,?,?)";
+    String sql = "INSERT INTO products (name, price, description, image) VALUES (?,?,?,?)";
 
     try (Connection conn = DriverManager.getConnection(URL, "root", "1234"); 
          PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
@@ -11,6 +11,7 @@
         stmt.setString(1, request.getParameter("name"));
         stmt.setDouble(2, Double.parseDouble(request.getParameter("price")));
         stmt.setString(3, request.getParameter("description"));
+        stmt.setString(4, request.getParameter("image"));
 
         stmt.executeUpdate();
 

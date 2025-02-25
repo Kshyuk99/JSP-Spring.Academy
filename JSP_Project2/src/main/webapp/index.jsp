@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+<%@ page import="java.util.*"%>
 <%@page import="java.sql.*"%>
 
 	<%	
@@ -64,6 +64,11 @@
 	margin: 0 10px; /* 링크 사이 간격 */
 	
 	}	
+	.product-container {
+		display: flex;
+		justify-content: center;
+		gap: 80px;
+	}
 	</style>	
 	</head>	
 	<body>	
@@ -74,7 +79,7 @@
 	<a href="<%=request.getContextPath()%>/logout.jsp">로그아웃</a>	
 	<div style="margin-bottom: 20px;">
 	
-	<form method="get">	
+	<form method="get" action="search_result.jsp">	
 	<select name="searchType">	
 	<option value="name">상품이름</option>	
 	<option value="price">가격비교</option>	
@@ -94,41 +99,25 @@
 	
 	<tr>	
 	<td colspan="5">	
-	<table border="1" width="100%">	
-	<tr>
-		
-		<td><input type="text" name="sangpum" value= "갤럭시북5" class="form-control" style="width: 200px;" required="required"> </td>
-		
-	</tr>		
-	<tr>
-		
-		<td><input type="image" img src="https://shopping-phinf.pstatic.net/main_5225015/52250151618.20250110133314.jpg?type=f640" class="form-control" style="width: 150px;" required="required"> </td>
-		
-	</tr>
-	<tr>
-		
-		<td><input type="text" name="price" value="1899000" class="form-control" style="width: 200px;" required="required"> </td>
-	</tr>	
-	<tr>
-		
-		<td><input type="text" name="amount" value="20" class="form-control" style="width: 200px;" required="required"> </td>
-	</tr>
-	<tr>
-		
-		<td><input type="text" name="sangpum" value= "갤럭시S25" class="form-control" style="width: 200px;" required="required"> </td>
-	</tr>
-	<tr>
-		
-		<td><input type="image" img src="https://shopping-phinf.pstatic.net/main_5262874/52628743821.20250220111014.jpg?type=f640" class="form-control" style="width: 150px;" required="required"> </td>
-	</tr>
-	<tr>
-		
-		<td><input type="text" name="price" value="1086000" class="form-control" style="width: 200px;" required="required"> </td>
-	</tr>	
-	<tr>
-		
-		<td><input type="text" name="amount" value="20" class="form-control" style="width: 200px;" required="required"> </td>
-	</tr>
+	<div class="product-container"> <!-- <div class="product-item"> <input type="text" name="sangpum" value="갤럭시북5" class="form-control" style="width: 200px;" required="required"> -->
+                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5225015/52250151618.20250110133314.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
+                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5225015/52250151618.20250110133314.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
+                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5225015/52250151618.20250110133314.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
+                        <!-- <input type="text" name="price" value="1899000" class="form-control" style="width: 200px;" required="required">
+                        <input type="text" name="amount" value="20" class="form-control" style="width: 200px;" required="required"> -->
+                    </div>
+                    <div class="product-container">
+                    <!-- <div class="product-item"> <input type="text" name="sangpum" value="갤럭시S25" class="form-control" style="width: 200px;" required="required"> -->
+                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5262874/52628743821.20250220111014.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
+                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5262874/52628743821.20250220111014.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
+                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5262874/52628743821.20250220111014.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
+                        <!-- <input type="text" name="price" value="1086000" class="form-control" style="width: 200px;" required="required"> -->
+                        <!-- <input type="text" name="amount" value="20" class="form-control" style="width: 200px;" required="required"> -->
+                   </div>
+                    <!-- </div>
+                </div> -->
+                </td>
+                </tr>
 	
 	<%
 	

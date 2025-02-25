@@ -69,6 +69,7 @@ while(rs.next()){
 	</tr>
 				
 		<td align="center">
+		<a href="index.jsp">쇼핑몰 홈</a>
 			<!-- <input type="submit" value="등록">
 			<input type="submit" value="취소" onclick="window.location='index.jsp'"> -->
 		</td>
