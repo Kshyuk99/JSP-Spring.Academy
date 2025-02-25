@@ -56,5 +56,6 @@
     }
 %>
     <a href="product_list.jsp">상품 목록으로</a>
+    <a href="index.jsp">쇼핑몰 홈</a>
 </body>
 </html>

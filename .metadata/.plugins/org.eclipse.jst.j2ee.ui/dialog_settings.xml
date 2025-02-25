@@ -6,6 +6,8 @@
 		<item value="Apache Tomcat v9.0"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\kshyu\Downloads\docker-compose0224\JSP_Project2.war"/>
+		<item value="C:\Users\kshyu\Downloads\docker-compose0224\20250224web.war"/>
 		<item value="C:\Users\kshyu\Downloads\docker_compose\JSP_Project2.war"/>
 		<item value="C:\Users\kshyu\Downloads\docker_compose\20250221.war"/>
 		<item value="C:\docker_tmp2\20250220web_login.war"/>
