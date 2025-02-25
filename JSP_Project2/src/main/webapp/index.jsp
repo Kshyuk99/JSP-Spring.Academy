@@ -155,9 +155,9 @@
 	%>
 	
 	</table>	
-	</td>	
+	<!-- </td>	
 	</tr>	
-	</table>	
+	</table>	 -->
 	</div>	
 	</body>	
 	</html>
