@@ -82,7 +82,7 @@
 	<form method="get" action="search_result.jsp">	
 	<select name="searchType">	
 	<option value="name">상품이름</option>	
-	<option value="price">가격검색</option>	
+	<option value="price">가격비교</option>	
 	</select>	
 	<input type="text" name="searchKeyword" placeholder="검색어를 입력하세요">	
 	<input type="submit" value="검색">	

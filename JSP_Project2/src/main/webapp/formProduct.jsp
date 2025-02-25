@@ -6,12 +6,20 @@
 <title>상품 입력</title>
 </head>
 <body>
-<form action="inputProduct.jsp" method="post">
-상품명: <input type="text" name="name" /><br/>
-가격: <input type="text" name="price" /><br/>
-수량: <input type="text" name="description" /><br/>
-이미지: <input type="image" name="image" /><br/>
-<input type="submit" value="상품 추가"/>
+<form action="inputProduct.jsp" method="post" enctype="multipart/form-data">
+    <label for="name">상품명:</label>
+    <input type="text" name="name" id="name"><br>
+
+    <label for="price">가격:</label>
+    <input type="number" name="price" id="price"><br>
+
+    <label for="description">설명:</label>
+    <textarea name="description" id="description"></textarea><br>
+
+    <label for="image">이미지:</label>
+    <input type="file" name="image" id="image"><br>
+
+    <input type="submit" value="상품 추가">
 </form>
 </body>
 </html>
