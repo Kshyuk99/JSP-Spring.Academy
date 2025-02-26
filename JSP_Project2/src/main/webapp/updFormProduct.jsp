@@ -14,7 +14,7 @@ try (Connection conn = DriverManager.getConnection(URL, "root", "1234");
      ResultSet rs = stmt.executeQuery(sql);) {
     if (rs.next()) {
         name = rs.getString("name");
-        price = rs.getDouble("price");
+        price = rs.getInt("price");
         description = rs.getString("description");
     }
 } catch (Exception e) {

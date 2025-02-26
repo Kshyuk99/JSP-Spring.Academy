@@ -23,7 +23,7 @@
             Map<String, Object> product = new HashMap<>();
             product.put("id", rs.getInt("id")); // id는 Integer 타입
             product.put("name", rs.getString("name"));
-            product.put("price", rs.getDouble("price")); // price는 Double 타입
+            product.put("price", rs.getInt("price")); // price는 Double 타입
             product.put("image", rs.getString("image")); // 이미지 파일 이름 추가
             productList.add(product);
         }
@@ -48,6 +48,7 @@
             <td><%= product.get("price") %></td>
             <td><img src="uploads/<%= product.get("image") %>" alt="<%= product.get("name") %>" width="100"></td>
             <td>
+            <% request.setCharacterEncoding("UTF-8"); %>
                 <form action="addToCart.jsp" method="post">
                     <input type="hidden" name="productId" value="<%= product.get("id") %>">
                     <input type="hidden" name="productName" value="<%= product.get("name") %>">

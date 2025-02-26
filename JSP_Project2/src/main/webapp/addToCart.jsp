@@ -4,7 +4,8 @@
     // 1. productList.jsp에서 전달받은 상품 정보
     int productId = Integer.parseInt(request.getParameter("productId")); // id는 Integer
     String productName = request.getParameter("productName");
-    double productPrice = Double.parseDouble(request.getParameter("productPrice")); // price는 Double
+    /* double productPrice = Double.parseDouble(request.getParameter("productPrice")); */ // price는 Double
+    int productPrice = Integer.parseInt(request.getParameter("productPrice")); 
     int productQuantity = Integer.parseInt(request.getParameter("productQuantity"));
 
     // 2. 세션에서 cart 가져오기 (없으면 새로 생성)

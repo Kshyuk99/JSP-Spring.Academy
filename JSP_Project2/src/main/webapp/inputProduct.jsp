@@ -12,7 +12,7 @@
     MultipartRequest multi = new MultipartRequest(request, uploadPath, maxSize, encoding, new DefaultFileRenamePolicy());
 
     String name = multi.getParameter("name");
-    double price = Double.parseDouble(multi.getParameter("price"));
+    int price = Integer.parseInt(multi.getParameter("price"));    
     String description = multi.getParameter("description");
     String image = multi.getFilesystemName("image"); // 이미지 파일 이름
 

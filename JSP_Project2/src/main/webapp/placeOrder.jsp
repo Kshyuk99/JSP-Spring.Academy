@@ -39,7 +39,7 @@
                     	Stmt.setInt(1, orderId);
                     	Stmt.setInt(2, (int) item.get("id"));
                     	Stmt.setInt(3, (int) item.get("quantity"));
-                    	Stmt.setDouble(4, (double) item.get("price"));
+                    	Stmt.setInt(4, (int) item.get("price"));
                     	Stmt.executeUpdate();
                     }
                 }

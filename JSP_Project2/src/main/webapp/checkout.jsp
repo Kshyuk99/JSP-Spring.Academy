@@ -28,12 +28,12 @@
                 <th>합계</th>
             </tr>
             <%
-                double total = 0;
+                int total = 0;
                 for (Map<String, Object> item : cart) {
                     String name = (String) item.get("name");
-                    double price = (double)item.get("price");
+                    int price = (int)item.get("price");
                     int quantity = (int) item.get("quantity");
-                    double subtotal = price * quantity;
+                    int subtotal = price * quantity;
                     total += subtotal;
             %>
             <tr>

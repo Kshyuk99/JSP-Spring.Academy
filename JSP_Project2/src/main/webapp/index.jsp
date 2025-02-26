@@ -109,8 +109,8 @@
                     <div class="product-container">
                     <!-- <div class="product-item"> <input type="text" name="sangpum" value="갤럭시S25" class="form-control" style="width: 200px;" required="required"> -->
                         <input type="image" img src="https://shopping-phinf.pstatic.net/main_5262874/52628743821.20250220111014.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
-                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5262874/52628743821.20250220111014.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
-                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5262874/52628743821.20250220111014.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
+                        <input type="image" img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fditto-phinf.pstatic.net%2F20240705_255%2F1720162349915Ihe5L_JPEG%2F6687982cb48ee75234d03391.jpg&type=o&size=472x472&ttype=input" class="form-control" style="width: 200px;" required="required">
+                        <input type="image" img src="https://shop-phinf.pstatic.net/20241107_255/1730962039680OzIvk_JPEG/16673204874466463_512513810.jpg?type=m510" class="form-control" style="width: 200px;" required="required">
                         <!-- <input type="text" name="price" value="1086000" class="form-control" style="width: 200px;" required="required"> -->
                         <!-- <input type="text" name="amount" value="20" class="form-control" style="width: 200px;" required="required"> -->
                    </div>
