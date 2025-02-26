@@ -21,15 +21,14 @@
 
         while (rs.next()) {
             Map<String, Object> product = new HashMap<>();
-            product.put("id", rs.getInt("id")); // id는 Integer 타입
+            product.put("id", rs.getInt("id"));
             product.put("name", rs.getString("name"));
-            product.put("price", rs.getInt("price")); // price는 Double 타입
-            product.put("image", rs.getString("image")); // 이미지 파일 이름 추가
+            product.put("price", rs.getInt("price")); 
+            product.put("image", rs.getString("image"));
             productList.add(product);
         }
     } catch (SQLException e) {
         e.printStackTrace();
-       
     }
     %>
 
@@ -48,8 +47,7 @@
             <td><%= product.get("price") %></td>
             <td><img src="uploads/<%= product.get("image") %>" alt="<%= product.get("name") %>" width="100"></td>
             <td>
-            <% request.setCharacterEncoding("UTF-8"); %>
-                <form action="addToCart.jsp" method="post">
+                <form action="addToCart.jsp" method="post"> <%-- POST 방식으로 변경 --%>
                     <input type="hidden" name="productId" value="<%= product.get("id") %>">
                     <input type="hidden" name="productName" value="<%= product.get("name") %>">
                     <input type="hidden" name="productPrice" value="<%= product.get("price") %>">
@@ -57,15 +55,6 @@
                     <input type="number" name="productQuantity" id="quantity<%= product.get("id") %>" value="1" min="1" required>
                     <input type="submit" value="추가">
                 </form>
-   <!--              <div style="margin-bottom: 20px;">
-    <form method="get" action="search_result.jsp"> <select name="searchType">
-            <option value="name">상품이름</option>
-            <option value="price">가격비교</option>
-        </select>
-        <input type="text" name="searchKeyword" placeholder="검색어를 입력하세요">
-        <input type="submit" value="검색">
-    </form>
-</div> -->
             </td>
         </tr>
         <% } %>

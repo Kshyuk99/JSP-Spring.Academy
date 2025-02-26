@@ -94,15 +94,16 @@
 	<th width="20%"><a href="best.jsp">베스트</a></th>	
 	<th width="20%"><a href="product_list.jsp">상품목록</a></th>	
 	<th width="20%"><a href="cart.jsp">장바구니</a></th>	
-	<th width="20%"><a href="formProduct.jsp">상품 추가</a></th>	
+	<th width="20%"><a href="formProduct.jsp">상품 추가</a></th>
+		
 	</tr>
 	
 	<tr>	
 	<td colspan="5">	
 	<div class="product-container"> <!-- <div class="product-item"> <input type="text" name="sangpum" value="갤럭시북5" class="form-control" style="width: 200px;" required="required"> -->
+                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_4667132/46671324258.jpg?type=f300" style="width: 200px;" required="required">
                         <input type="image" img src="https://shopping-phinf.pstatic.net/main_5225015/52250151618.20250110133314.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
-                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5225015/52250151618.20250110133314.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
-                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_5225015/52250151618.20250110133314.jpg?type=f640" class="form-control" style="width: 200px;" required="required">
+                        <input type="image" img src="https://shopping-phinf.pstatic.net/main_4914855/49148556559.4.jpg?type=f300" class="form-control" style="width: 200px;" required="required">
                         <!-- <input type="text" name="price" value="1899000" class="form-control" style="width: 200px;" required="required">
                         <input type="text" name="amount" value="20" class="form-control" style="width: 200px;" required="required"> -->
                     </div>

@@ -22,7 +22,7 @@ try (Connection conn = DriverManager.getConnection(URL, "root", "1234");
 %>
 <tr>
 <td><%= rs.getString("name") %></td>
-<td><%= rs.getDouble("price") %></td>
+<td><%= rs.getInt("price") %></td>
 <td><%= rs.getString("description") %></td>
 <td><%= rs.getString("image") %></td>
 <td>
