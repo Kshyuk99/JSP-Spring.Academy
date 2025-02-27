@@ -5,35 +5,41 @@
     <meta charset="UTF-8">
     <title>회원가입</title>
     <style>
-            .login-container {  
-            width: 300px;
-            margin: 100px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        input[type="text"], input[type="password"] {
-            width: 95%;
-            padding: 5px;
-            margin-top: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
+     .login-container {  
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* width: 300px; */ 
+    
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="address"] {
+    width: 95%; 
+    padding: 5px;
+    margin-top: 5px;
+    
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
     </style>
 
 </head>
 <body>
-    <h2>회원가입</h2>
+    <!-- <h2>회원가입</h2> -->
     <div class="login-container">
         <form action="signupProcess.jsp" method="POST">
             <div class="form-group">

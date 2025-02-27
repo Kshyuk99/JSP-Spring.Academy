@@ -65,7 +65,7 @@
                 </td>
                 </tr>
 	
-	<%
+<%
 	
 	Class.forName("com.mysql.cj.jdbc.Driver");	
 	String URL = "jdbc:mysql://localhost:3306/spring5fs";	
@@ -78,7 +78,7 @@
 	ResultSet rs = pstmt.executeQuery();) {	
 	while(rs.next()) {
 	
-	%>
+%>
 	
 	<%-- <tr>
 	
@@ -92,13 +92,13 @@
 	
 	<!--다른 상품 -->
 	
-	<%
+<%
 	
 	}
 	
 	} catch (Exception e) {  e.printStackTrace();  }
 	
-	%>
+%>
 	
 	</table>	
 	<!-- </td>	
