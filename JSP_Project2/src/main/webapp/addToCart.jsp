@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.*"%>
-<%@ page import="java.net.URLDecoder" %> <%-- URLDecoder import 추가 --%>
+<%@ page import="java.net.URLDecoder" %>
 <%
     // 1. productList.jsp에서 전달받은 상품 정보 (이름은 URL 디코딩)
     int productId = Integer.parseInt(request.getParameter("productId"));
-    String productName = URLDecoder.decode(request.getParameter("productName"), "UTF-8"); // URL 디코딩
-    int productPrice = Integer.parseInt(request.getParameter("productPrice"));
+    String productName = URLDecoder.decode(request.getParameter("productName"), "UTF-8");
+    int productPrice = Integer.parseInt(request.getParameter("productPrice")); // int 타입으로 유지
     int productQuantity = Integer.parseInt(request.getParameter("productQuantity"));
 
     // 2. 세션에서 cart 가져오기 (없으면 새로 생성)

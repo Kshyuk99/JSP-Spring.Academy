@@ -5,13 +5,48 @@
 <head>
 <meta charset="UTF-8">
 <title>상품 목록</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+</style>
 </head>
 <body>
     <h3>상품 목록</h3>
 
     <%
     // 데이터베이스에서 상품 목록 가져오기
-    String URL = "jdbc:mysql://localhost:3306/spring5fs";
+    String URL = "jdbc:mysql://localhost:3306/spring5fs?useUnicode=true&characterEncoding=UTF-8"; // UTF-8 설정 추가
     String sql = "SELECT id, name, price, image FROM products"; // products 테이블에서 상품 정보 가져옴
 
     List<Map<String, Object>> productList = new ArrayList<>();
@@ -23,7 +58,7 @@
             Map<String, Object> product = new HashMap<>();
             product.put("id", rs.getInt("id"));
             product.put("name", rs.getString("name"));
-            product.put("price", rs.getInt("price")); 
+            product.put("price", rs.getInt("price")); // price를 int 타입으로 가져옴
             product.put("image", rs.getString("image"));
             productList.add(product);
         }
@@ -47,7 +82,7 @@
             <td><%= product.get("price") %></td>
             <td><img src="uploads/<%= product.get("image") %>" alt="<%= product.get("name") %>" width="100"></td>
             <td>
-                <form action="addToCart.jsp" method="post"> <%-- POST 방식으로 변경 --%>
+                <form action="addToCart.jsp" method="post">
                     <input type="hidden" name="productId" value="<%= product.get("id") %>">
                     <input type="hidden" name="productName" value="<%= product.get("name") %>">
                     <input type="hidden" name="productPrice" value="<%= product.get("price") %>">
