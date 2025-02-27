@@ -12,8 +12,63 @@
 <head>
     <meta charset="UTF-8">
     <title>검색 결과</title>
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+    </style>
 </head>
 <body>
+<div class="container">
     <div align="center">
         <h1>검색 결과</h1>
 
@@ -63,6 +118,7 @@
 
         <br>
         <a href="product_list.jsp">상품 목록으로 돌아가기</a>
+    </div>
     </div>
 </body>
 </html>
