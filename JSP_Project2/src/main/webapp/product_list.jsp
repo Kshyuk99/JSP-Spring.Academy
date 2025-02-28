@@ -58,7 +58,7 @@ input[type="number"] {
             Map<String, Object> product = new HashMap<>();
             product.put("id", rs.getInt("id"));
             product.put("name", rs.getString("name"));
-            product.put("price", rs.getInt("price")); // price를 int 타입으로 가져옴
+            product.put("price", rs.getInt("price")); 
             product.put("image", rs.getString("image"));
             productList.add(product);
         }
@@ -82,7 +82,7 @@ input[type="number"] {
             <td><%= product.get("price") %></td>
             <td><img src="uploads/<%= product.get("image") %>" alt="<%= product.get("name") %>" width="100"></td>
             <td>
-                <form action="addToCart.jsp" method="post">
+                <form name="list" action="addToCart.jsp" method="post">
                     <input type="hidden" name="productId" value="<%= product.get("id") %>">
                     <input type="hidden" name="productName" value="<%= product.get("name") %>">
                     <input type="hidden" name="productPrice" value="<%= product.get("price") %>">
