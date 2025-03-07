@@ -9,4 +9,5 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="chap02.HelloWorld"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
 </qualifiedTypeNameHistroy>
