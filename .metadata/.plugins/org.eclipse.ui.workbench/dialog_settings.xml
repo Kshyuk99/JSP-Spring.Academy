@@ -3,13 +3,14 @@
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="95"/>
 		<item key="DIALOG_Y_ORIGIN" value="14"/>
-		<item key="DIALOG_WIDTH" value="728"/>
+		<item key="DIALOG_WIDTH" value="783"/>
 		<item key="DIALOG_HEIGHT" value="844"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
 		</list>
 		<section name="NewWizard.dialogBounds">
 			<item key="DIALOG_X_ORIGIN" value="464"/>
@@ -39,12 +40,16 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
+			<item value="org.eclipse.jdt.ui.JavaPerspective"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.ui.perspectives"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
 		</list>
 		<list key="textArray">
+			<item value="ja"/>
 		</list>
 	</section>
 </section>

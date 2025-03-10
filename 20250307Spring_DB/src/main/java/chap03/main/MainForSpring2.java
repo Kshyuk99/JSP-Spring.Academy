@@ -25,9 +25,12 @@ public class MainForSpring2 {
 	public static void main(String[] args) throws IOException {
 		ctx = new AnnotationConfigApplicationContext(AppCtx.class);
 		MemberDao memberDao = ctx.getBean(MemberDao.class);
-		Member member = new Member("kim@korea.com", "1234", "홍길동", LocalDateTime.now());
-		memberDao.insert(member);
-		System.out.println("입력 성공!");
+//		Member member = new Member("kim2@korea.com", "1234", "홍길동", LocalDateTime.now());
+//		memberDao.insert(member);
+//		System.out.println("입력 성공!");
+		for(Member member : memberDao.selectAll()) {
+			System.out.println(member);
+		}
 		
 	}
 
