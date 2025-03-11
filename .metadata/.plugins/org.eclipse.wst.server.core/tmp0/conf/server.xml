@@ -165,7 +165,7 @@
 
   <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" maxActive="100" maxIdle="10" name="jdbc/MySql" password="mysql84" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/scottdb?serverTimezone=UTC" username="root"/>
 
-</Context><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\20250304MVC_Board" path="/20250304MVC_Board" reloadable="true" source="org.eclipse.jst.jee.server:20250304MVC_Board"/></Host>
+</Context><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\20250304MVC_Board" path="/20250304MVC_Board" reloadable="true" source="org.eclipse.jst.jee.server:20250304MVC_Board"/><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sp5-chap09" path="/sp5-chap09" reloadable="true" source="org.eclipse.jst.jee.server:sp5-chap09"/><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\springMVC_mysql_crud" path="/spring-mvc-crud" reloadable="true" source="org.eclipse.jst.jee.server:springMVC_mysql_crud"/></Host>
     </Engine>
   </Service>
 </Server>
