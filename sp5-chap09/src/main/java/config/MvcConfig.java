@@ -16,6 +16,7 @@ public class MvcConfig implements WebMvcConfigurer {
 		configurer.enable();  // 기본 서블릿 처리를 활성화
 	}
 
+		// 뷰 resolver 설정
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		registry.jsp("/WEB-INF/view/", ".jsp");

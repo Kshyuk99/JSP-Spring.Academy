@@ -160,12 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSP_Project2" path="/JSP_Project2" reloadable="true" source="org.eclipse.jst.jee.server:JSP_Project2"/><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\20250305Oracle" path="/20250305Oracle" reloadable="true" source="org.eclipse.jst.jee.server:20250305Oracle">
-   <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" maxActive="50" maxIdle="10" name="jdbc/OracleDB" password="TIGER" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="SCOTT"/>
-
-  <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" maxActive="100" maxIdle="10" name="jdbc/MySql" password="mysql84" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/scottdb?serverTimezone=UTC" username="root"/>
-
-</Context><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\20250304MVC_Board" path="/20250304MVC_Board" reloadable="true" source="org.eclipse.jst.jee.server:20250304MVC_Board"/><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sp5-chap09" path="/sp5-chap09" reloadable="true" source="org.eclipse.jst.jee.server:sp5-chap09"/><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\springMVC_mysql_crud" path="/spring-mvc-crud" reloadable="true" source="org.eclipse.jst.jee.server:springMVC_mysql_crud"/></Host>
+      <Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sp5-chap10" path="/sp5-chap10" reloadable="true" source="org.eclipse.jst.jee.server:sp5-chap10"/><Context docBase="C:\JSP_academy\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\springMVC_mysql_crud" path="" reloadable="true" source="org.eclipse.jst.jee.server:springMVC_mysql_crud"/></Host>
     </Engine>
   </Service>
 </Server>
